@@ -1,7 +1,10 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
+import { checkUser } from "@/lib/checkUser";
 
-export default function Header() {
+export default async function Header() {
+  const user = await checkUser();
+
   return (
     <header className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
@@ -14,7 +17,7 @@ export default function Header() {
           <div>
             <SignedOut>
               <SignInButton mode="modal">
-                <button className="bg-accent text-accent-foreground hover:bg-accent/90 px-4 py-2 rounded-md transition-colors">
+                <button className="bg-accent text-accent-foreground hover:bg-accent/90 px-4 py-2 rounded-md transition-colors font-bold">
                   Sign In
                 </button>
               </SignInButton>
