@@ -5,14 +5,15 @@ import addTransaction from "@/app/actions/addTransaction";
 import { toast } from "react-toastify";
 
 export default function AddTransaction() {
+  const formRef = useRef<HTMLFormElement>(null);
   const clientAction = async (formData: FormData) => {
     const { data, error } = await addTransaction(formData);
 
     if (error) {
-      alert(error);
+      toast.error(error);
     } else {
-      alert("Transaction added");
-      console.log(data);
+      toast.success("Transaction added");
+      formRef.current?.reset();
     }
   };
 
@@ -20,7 +21,7 @@ export default function AddTransaction() {
     <section className="bg-card text-card-foreground p-6 rounded-lg shadow-md">
       <div className="max-w-md mx-auto">
         <h3 className="text-2xl font-semibold mb-4">Add transaction</h3>
-        <form action={clientAction} className="space-y-4">
+        <form ref={formRef} action={clientAction} className="space-y-4">
           <div>
             <label htmlFor="text" className="block text-sm font-medium mb-1">
               Text
