@@ -9,7 +9,7 @@ const Dashboard = async () => {
 
   return (
     <>
-      <section className="bg-background py-8 px-4">
+      <section className="bg-background py-4 px-4">
         <div className="container mx-auto max-w-3xl">
           <div className="bg-card text-card-foreground p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-semibold mb-4">
