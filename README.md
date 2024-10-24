@@ -1,3 +1,27 @@
+# Expense Tracker
+
+This is a simple expense tracker web application built using [Next.js](https://nextjs.org), [TypeScript](https://www.typescriptlang.org/), [TailwindCSS](https://tailwindcss.com/), [Neon DB](https://neon.tech/), and [Clerk](https://clerk.dev/) for authentication.
+
+## Features
+
+- Track your expenses.
+- Add and delete transactions.
+- User authentication with Clerk.
+- Neon DB as the database.
+- Styled using TailwindCSS for a responsive UI.
+
+## Screenshot
+
+![Expense Tracker Screenshot](./public/images/screenshot.PNG)
+
+## Technologies Used
+
+- **Next.js**: For server-side rendering and routing.
+- **TypeScript**: For type safety and development experience.
+- **TailwindCSS**: For styling and utility-based CSS.
+- **Neon DB**: A cloud database platform for storing user transactions.
+- **Clerk**: Authentication and user management.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
