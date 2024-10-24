@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function WelcomeSplash() {
   return (
-    <div className="bg-background flex items-center justify-center">
+    <div className="bg-background flex items-center justify-center h-screen">
       <div className="container pt-20 mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-primary mb-4">
