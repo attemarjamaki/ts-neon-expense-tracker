@@ -20,7 +20,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Expense Tracker",
-  description: "Tracking my ts knowledge",
+  description: "Simple Expense Tracker tool",
 };
 
 export default function RootLayout({
